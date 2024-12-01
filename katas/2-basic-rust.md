@@ -9,7 +9,8 @@
 
 
 ## 📚 Facts 📚
+> #### Note terminology
+> We normally treat _C_ as a root note. This means we consider an octave as starting with a C, ending with a B like this: `C, C#, D, D#, E, F, F#, G, G#, A, A#, B`. This pattern repeats, just an octave higher / lower. To distinguish a C and its next octave version, we sometimes append numbers to notes to clarify. A more precise notation for the sequence above in the _one-lined_ octave would be `C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4`. This would follow with the _two-lined_ octave notes `C5, C#5, D5, D#5, ...`
+
 > #### Concert pitch
 > The _concert pitch_ (kammernote in Norwegian), is a reference pitch that all instruments are tuned against. The international standard defines the note A4 as 440Hz, or A440 for shorthand.
-
-> #### 
