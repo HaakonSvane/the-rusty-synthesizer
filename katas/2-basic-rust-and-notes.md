@@ -1,4 +1,4 @@
-# 2. An introduction to Rust
+# 2. An introduction to Rust and notes
 
 ## Tasks
 1. Create a module in `src/notes.rs` that contains an enum `Note` of all notes between C and B.
@@ -14,3 +14,7 @@
 
 > #### Concert pitch
 > The _concert pitch_ (kammernote in Norwegian), is a reference pitch that all instruments are tuned against. The international standard defines the note A4 as 440Hz, or A440 for shorthand.
+
+
+> #### Ignoring _dead code_ warnings in Rust
+> You can flag to the compiler to ignore dead code in structs, enums, functions etc by annotating them with `#[allow(dead_code)]` attribte.
