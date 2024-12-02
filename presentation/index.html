@@ -8,12 +8,22 @@
   <title>The Rusty Synthesizer</title>
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
+  <div class="audio-select">
+    <label>lydkilde</label>
+    <select id="audio-devices"></select>
+  </div>
   <div class="reveal">
     <div class="slides">
-      <section>Slide 1</section>
+      <section data-background-color="rgb(17,19,60)">
+        <canvas id="oscilloscope">
+          Your browser does not support the HTML5 canvas element.
+        </canvas>
+      </section>
       <section>Slide 2</section>
       <section>Slide 2</section>
       <section>Slide 2</section>
