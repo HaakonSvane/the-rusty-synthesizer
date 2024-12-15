@@ -9,29 +9,95 @@
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
   <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css" />
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
   <div class="audio-select">
     <label>lydkilde</label>
-    <select id="audio-devices"></select>
+    <select id="audio-devices" aria-placeholder="Select audio device"></select>
+  </div>
+  <div class="oscilloscope">
+    <canvas id="oscilloscope">
+      Your browser does not support the HTML5 canvas element.
+    </canvas>
   </div>
   <div class="reveal">
     <div class="slides">
-      <section data-background-color="rgb(17,19,60)">
-        <canvas id="oscilloscope">
-          Your browser does not support the HTML5 canvas element.
-        </canvas>
+      <section data-background-color="#11133C">
+        <h3>The Rusty Synthesizer 🎹</h3>
+        <small>An introduction to sound and music</small>
       </section>
-      <section>Slide 2</section>
-      <section>Slide 2</section>
+
+      <section data-background-color="#11133C">
+        <section>
+          <h3>What is sound?</h3>
+          <p>Sound is a pressurized wave, travelling through a transmission
+            medium such as a gas, liquid or solid</p>
+          <p class="fragment">Our ears interpret the frequency of sound waves as pitch</p>
+        </section>
+
+        <section>
+          <h3>What are notes?</h3>
+          <p>A note is a soundwave played at a certain frequency</p>
+          <p class="fragment">A doubling in frequency yields the same note, just an octave higher</p>
+        </section>
+
+        <section>
+          <h3>What is harmony?</h3>
+          <p>Harmony is the combination of notes played simultaneously</p>
+          <div class="fragment">
+            <p>Harmonious notes can be described as a mathematical relationship against a root note</p>
+            <div class="r-hstack">
+              <div data-id="first-harmony" style="margin: 10px; padding: 10px; font-size: large;">
+                \[(1 + 0) f \]
+              </div>
+              <div style="margin: 10px; padding: 10px; font-size: large;">
+                \[(1 + \frac{1}{1}) f \]
+              </div>
+              <div style="margin: 10px; padding: 10px; font-size: large;">
+                \[(1 + \frac{1}{2}) f \]
+              </div>
+              <div style="margin: 10px; padding: 10px; font-size: large;">
+                \[(1 + \frac{1}{3}) f \]
+              </div>
+              <div style="margin: 10px; padding: 10px; font-size: large;">
+                \[\ldots \]
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section data-auto-animate>
+          <div class="r-hstack">
+            <div data-id="first-harmony" style="margin: 10px; padding: 10px; font-size: x-large;">
+              \[(1 + 0) f \]
+            </div>
+            <div class="fragment" style="margin: 10px; padding: 10px; font-size: x-large;">
+              \[(1 + \frac{1}{1}) f \]
+            </div>
+            <div class="fragment" style="margin: 10px; padding: 10px; font-size: x-large;">
+              \[(1 + \frac{1}{2}) f \]
+            </div>
+            <div class="fragment" style="margin: 10px; padding: 10px; font-size: x-large;">
+              \[(1 + \frac{1}{3}) f \]
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section>
+        <h2>What's next?</h2>
+        <p class="fragment">Now it is time to </p>
+      </section>
       <section>Slide 2</section>
       <section>Slide 2</section>
       <section>Slide 2</section>
     </div>
   </div>
   <script type="module" src="/src/main.ts"></script>
+  <script src="plugin/math/math.js"></script>
 </body>
 
 </html>
