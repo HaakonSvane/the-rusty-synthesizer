@@ -1,4 +1,4 @@
-# 3. Our first homemade oscillator
+# X. Our own homemade oscillator
 Now it is time to code our first sine wave oscillator ourselves!
 Rodio requires any sound source to conform to two traits (often called _interfaces_ in other languages) for our own implementation
 
