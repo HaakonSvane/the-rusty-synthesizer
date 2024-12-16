@@ -2,15 +2,13 @@
 
 ## Tasks
 1. Install `rodio` as a dependency
-2. Play a random tone for 5 seconds before the program terminates
+2. Using rodio's `source::SineWave` source struct, play an A note for 5 seconds before terminating the program
 3. Configure your playback code to accept a `Note`
-4. _(optional)_ Can you get get rodio to play multiple notes in sequece?
-
 
 
 ## 📚 Facts 📚
-> #### TITLE
-> description
+> #### rodio audio playback
+> Rodio plays sound from a different thread than the main thread. This means the program will terminate immediately unless you sleep the main thread for the desired playback duration.
 
 > #### TITLE
 > description

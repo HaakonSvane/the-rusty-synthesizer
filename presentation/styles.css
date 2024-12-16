@@ -13,6 +13,12 @@
     font-size: 1.5rem;
 }
 
+.reveal ul {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
 
 .oscilloscope {
     width: 100%;

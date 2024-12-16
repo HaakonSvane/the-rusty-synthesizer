@@ -15,7 +15,7 @@ pub enum Note {
 }
 
 impl Note {
-    pub fn frequecy(&self) -> f64 {
+    pub fn frequecy(&self) -> f32 {
         let semitones_from_concert_pitch = match self {
             Note::C => -9,
             Note::CSharp => -8,
@@ -31,6 +31,6 @@ impl Note {
             Note::B => 2,
         };
 
-        return 440.0 * 2.0_f64.powf(semitones_from_concert_pitch as f64 / 12.0);
+        return 440.0 * 2.0_f32.powf(semitones_from_concert_pitch as f32 / 12.0);
     }
 }
