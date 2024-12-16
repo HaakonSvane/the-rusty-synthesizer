@@ -8,8 +8,5 @@ Rodio only comes with a sine-wave ready to use out the box, but inside its codeb
 
 
 ## 📚 Facts 📚
-> #### rodio audio playback
-> Rodio plays sound from a different thread than the main thread. This means the program will terminate immediately unless you sleep the main thread for the desired playback duration.
-
-> #### TITLE
-> description
+> #### Everything is just a sine wave?
+> Every single repeatable signal as we are working with can actually be decomposed into a sum of waveforms. The square wave for example can be represented in a binary form (i.e alternate between 1 and -1 on a set frequency), or it can be expressed as a sum of many sine waves with harmonic frequencies. ![gif](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fourier_series_for_square_wave.gif/350px-Fourier_series_for_square_wave.gif).

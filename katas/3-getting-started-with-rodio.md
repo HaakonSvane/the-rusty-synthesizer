@@ -9,6 +9,3 @@
 ## 📚 Facts 📚
 > #### rodio audio playback
 > Rodio plays sound from a different thread than the main thread. This means the program will terminate immediately unless you sleep the main thread for the desired playback duration.
-
-> #### TITLE
-> description

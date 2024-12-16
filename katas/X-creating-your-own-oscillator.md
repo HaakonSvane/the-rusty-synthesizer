@@ -1,26 +1,17 @@
 # 3. Our first homemade oscillator
 Now it is time to code our first sine wave oscillator ourselves!
-You are free to implement this how you like, but since we will be trying our hand at different types of oscillators later on, it 
-is recommended that we stick to a common interface (called _traits_ in rust).
+Rodio requires any sound source to conform to two traits (often called _interfaces_ in other languages) for our own implementation
 
-```rust
-trait Oscillator {
-    /// Gets the next value to be played
-    get_next_sample() -> f32;
-    /// Sets the frequency of the oscillator playing
-    set_frequency() -> f32;
-}
-```
+- `Iterable`
+- `Source`
+
+
 ## Tasks
-1. In a new file, create a `SineWaveOscillator` struct.
-2. Implement the `Oscillator` trait 
-3. Play a random tone for 5 seconds before the program terminates
-4. Configure your playback code to accept a `Note`
+1. In a new file, create a struct representing your custom oscillator.
+2. Implement the `Iterable` and `Source` traits
+3. Have the oscillator return whatever you feel like.
 
 
 ## 📚 Facts 📚
-> #### rodio audio playback
-> Rodio plays sound from a different thread than the main thread. This means the program will terminate immediately unless you sleep the main thread for the desired playback duration.
-
-> #### TITLE
-> 
+> #### All the sounds in the world!
+> If done correctly, you could actually simulate any sound in the world using your own oscillator and a single wave-form. This would require you to study the harmonics for the sound you want to replicate though.
